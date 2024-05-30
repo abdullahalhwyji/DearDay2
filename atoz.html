@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>LetItBe - Mental Health Awareness</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #4caf50, #81c784);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: url('https://source.unsplash.com/featured/?mental-health') no-repeat center center/cover;
+            color: white;
+            height: 60vh;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .entry {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #4caf50;
+            background-color: #f9f9f9;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .entry:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .entry h2 a {
+            text-decoration: none;
+            color: #4caf50;
+            transition: color 0.3s;
+        }
+
+        .entry h2 a:hover {
+            color: #388e3c;
+        }
+
+        .description {
+            font-size: 1em;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4caf50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .entry {
+                padding: 15px;
+            }
+
+            .entry h2 {
+                font-size: 1.3em;
+            }
+
+            .description {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LetItBe - Mental Health Awareness</h1>
+    </header>
+    <div class="hero">
+        <h1>Understanding Mental Health</h1>
+        <p>Explore common mental health illnesses and learn how to support those affected.</p>
+    </div>
+    <div class="container">
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Anxiety_disorder">Anxiety Disorders</a></h2>
+            <p class="description">
+                Anxiety disorders are a group of mental health disorders characterized by feelings of anxiety and fear. They can range from generalized anxiety disorder (GAD) to specific phobias.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Bipolar_disorder">Bipolar Disorder</a></h2>
+            <p class="description">
+                Bipolar disorder, also known as manic-depressive illness, is marked by extreme mood swings, including episodes of mania (elevated mood) and depression (low mood).
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Major_depressive_disorder">Clinical Depression</a></h2>
+            <p class="description">
+                Clinical depression, or major depressive disorder, is a common mental health disorder characterized by persistent feelings of sadness, hopelessness, and a loss of interest or pleasure in activities.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Dissociative_identity_disorder">Dissociative Identity Disorder (DID)</a></h2>
+            <p class="description">
+                DID, formerly known as multiple personality disorder, is a condition in which an individual's identity is fragmented into two or more distinct personality states.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Eating_disorder">Eating Disorders</a></h2>
+            <p class="description">
+                Eating disorders like anorexia nervosa and bulimia nervosa involve extreme and unhealthy behaviors related to food, eating, and body weight.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Generalized_anxiety_disorder">Generalized Anxiety Disorder (GAD)</a></h2>
+            <p class="description">
+                GAD is a chronic condition marked by excessive worry and anxiety about various aspects of life, often without a specific trigger.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Insomnia">Insomnia</a></h2>
+            <p class="description">
+                Insomnia is a sleep disorder characterized by difficulty falling asleep or staying asleep, leading to daytime fatigue and impairment.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Narcissistic_personality_disorder">Narcissistic Personality Disorder (NPD)</a></h2>
+            <p class="description">
+                NPD involves an inflated sense of self-importance, a need for excessive attention, and a lack of empathy for others.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Postpartum_depression">Postpartum Depression</a></h2>
+            <p class="description">
+                Postpartum depression is a form of clinical depression that occurs after childbirth and may involve mood disturbances and difficulty bonding with the baby.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Substance_abuse">Substance Use Disorder</a></h2>
+            <p class="description">
+                Substance use disorder refers to problematic patterns of substance use, including drug addiction and alcoholism, that can lead to negative consequences.
+            </p>
+        </div>
+        <div class="entry">
+            <h2><a href="https://en.wikipedia.org/wiki/Tourette_syndrome">Tourette Syndrome</a></h2>
+            <p class="description">
+                Tourette syndrome is a neurological condition characterized by involuntary tics and vocalizations.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 LetItBe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

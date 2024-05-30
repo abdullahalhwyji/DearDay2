@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>Let-It-Be</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #86469C;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #86469C;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #00A65C;
+        }
+
+        /* Content Styles */
+        #contents {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #contents h2 {
+            border-bottom: 2px solid #86469C;
+            padding-bottom: 5px;
+        }
+
+        #contents p {
+            margin-bottom: 1em;
+        }
+
+        #contents ul {
+            padding-left: 20px;
+        }
+
+        #contents ul li {
+            margin-bottom: 10px;
+        }
+
+        #contents a {
+            color: #86469C;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #contents a:hover {
+            color: #00A65C;
+        }
+
+        /* Additional Styles for Bullet Points */
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #86469C;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .helpline {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #contents {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll("nav a");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", event => {
+                    const targetId = event.target.getAttribute("href").slice(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        event.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70, // Adjust offset for sticky header
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            const contentsList = document.querySelectorAll("#contents ul li a");
+
+            contentsList.forEach(link => {
+                link.addEventListener("mouseover", () => {
+                    link.style.color = "#00A65C";
+                });
+
+                link.addEventListener("mouseout", () => {
+                    link.style.color = "";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DearDay</h1>
+        <h1>Mental Health Resources</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#meetups">Meetups</a></li>
+            <li><a href="#organizations">Organizations</a></li>
+        </ul>
+    </nav>
+    <section id="contents">
+        <h2>Here's How We Help You</h2>
+        <div class="container">
+            <p>A curated list of awesome articles, websites, and resources about mental health in Indonesia.</p>
+            <p><strong>Mental health</strong> is a level of <strong>psychological well-being</strong> or <strong>an absence of mental illness</strong>. It's the psychological state of someone who is functioning at a satisfactory level of emotional and behavioral adjustment.</p>
+            <p>It includes subjective well-being, perceived self-efficacy, autonomy, competence, inter-generational dependence, and self-actualization of one's intellectual and emotional potential, among others.</p>
+            <p><em>This list compiles several self-help resources we've personally found useful for a range of mental health problems, but in no way are they a replacement for professional help, psychotherapy, or pharmacotherapy. <strong>We're not experts</strong>, and even if we were, most of these tools are meant as an aid to therapy, not as a substitute.</em></p>
+            <p>If you're in a crisis, please see <a href="https://sehatmental.id/">Sehat Mental</a>, or <a href="http://www.intothelightid.org/">Into the Light Indonesia</a> for resources in your country.</p>
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#conferences">Conferences</a></li>
+                <li><a href="#meetups">Meetups</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+            </ul>
+            <h2 id="applications">Applications</h2>
+            <ul>
+                <li><a href="https://www.ruangobrol.id/">Ruang Obrol</a> - An app providing mental health support and counseling services.</li>
+                <li><a href="https://mindtera.com/">Mindtera</a> – A comprehensive wellness app for personal and professional growth.</li>
+                <li><a href="https://www.alodokter.com/">Alodokter</a> - General health app with mental health resources and access to doctors.</li>
+                <li><a href="https://halodoc.com/">Halodoc</a> - Offers consultations with mental health professionals.</li>
+                <li><a href="https://calm.com/">Calm</a> - Meditation and relaxation app for managing stress and anxiety.</li>
+            </ul>
+            <h2 id="articles">Articles</h2>
+            <ul>
+                <li><a href="https://www.alodokter.com/kesehatan-mental">Understanding Mental Health</a> - By Alodokter.</li>
+                <li><a href="https://hellosehat.com/mental/mental-lainnya/kesehatan-mental-adalah/">The Importance of Mental Health</a> - By HelloSehat.</li>
+                <li><a href="https://www.klikdokter.com/info-sehat/read/2698150/kesehatan-mental-bagaimana-menjaganya">Maintaining Mental Health</a> - By KlikDokter.</li>
+                <li><a href="https://www.halodoc.com/artikel/cara-menjaga-kesehatan-mental-di-tengah-pandemi-covid-19">Mental Health During the Pandemic</a> - By Halodoc.</li>
+                <li><a href="https://sehatq.com/artikel/tips-menjaga-kesehatan-mental-selama-masa-covid-19">Mental Health Tips During COVID-19</a> - By SehatQ.</li>
+            </ul>
+            <h2 id="books">Books</h2>
+            <ul>
+                <li><a href="https://www.periplus.com/p/9780340733291">Mental Health and Well-Being in Indonesia</a> - By Yuliana R.</li>
+                <li><a href="https://www.gramedia.com/products/mental-health-untuk-semua">Mental Health for Everyone</a> - By Anggia Prasetyani.</li>
+                <li><a href="https://www.gramedia.com/products/jangan-panik-mengatasi-kecemasan-dan-depresi">Don't Panic: Overcoming Anxiety and Depression</a> - By Eka Wartini.</li>
+                <li><a href="https://www.gramedia.com/products/positive-mindset">Positive Mindset</a> - By Arif Rahman Hakim.</li>
+                <li><a href="https://www.gramedia.com/products/memahami-kesehatan-mental">Understanding Mental Health</a> - By Dian Wijayanti.</li>
+            </ul>
+            <h2 id="podcasts">Podcasts</h2>
+            <ul class="bullet-list">
+                <li><a href="https://open.spotify.com/show/6RvqaPbtR16ThzjAk4qQjp">Do You See What I See?</a> - Host: Fenita Arie.</li>
+                <li><a href="https://open.spotify.com/show/1YdZmYHC8tEJ3E9B8JbTI5">Curhat Sehat</a> - Host: Rizka Nurul.</li>
+                <li><a href="https://open.spotify.com/show/5RoxqVuQOiHVwaoeS58diR">Suara Puan</a> - Host: Puan Maharani.</li>
+                <li><a href="https://open.spotify.com/show/3xX0VQvvvVYJZ6BxlUbKgG">Sekilas Info</a> - Host: Farhan.</li>
+                <li><a href="https://open.spotify.com/show/2nE11SPKMxNCexNJeWOkFk">Teman Bicara</a> - Host: Anita.</li>
+            </ul>
+            <h2 id="conferences">Conferences</h2>
+            <ul>
+                <li><a href="https://www.indonesiamentalhealthconference.com/">Indonesia Mental Health Conference</a> - Annual event bringing together mental health professionals.</li>
+                <li><a href="https://www.psikologiindonesia.org/">Psychology and Mental Health Summit</a> - Focus on psychological research and practices.</li>
+                <li><a href="https://www.icmhindo.com/">International Conference on Mental Health in Indonesia</a> - Discusses global and local mental health challenges and solutions.</li>
+                <li><a href="https://www.asiamhs.com/">Asian Mental Health Symposium</a> - Regional conference focusing on mental health issues in Asia.</li>
+                <li><a href="https://www.balimentalhealth.org/">Bali Mental Health Festival</a> - Event featuring workshops, talks, and activities to promote mental health.</li>
+            </ul>
+            <h2 id="meetups">Meetups</h2>
+            <ul>
+                <li><a href="https://www.meetup.com/mental-health-jakarta/">Mental Health Jakarta</a> - Regular meetups for discussing mental health topics.</li>
+                <li><a href="https://www.meetup.com/bali-mental-health/">Bali Mental Health Group</a> - Support group meetups in Bali.</li>
+                <li><a href="https://www.meetup.com/mental-health-bandung/">Bandung Mental Health Network</a> - Community meetups in Bandung.</li>
+                <li><a href="https://www.meetup.com/surabaya-mental-health/">Surabaya Mental Health Group</a> - Gatherings for mental health support in Surabaya.</li>
+                <li><a href="https://www.meetup.com/yogyakarta-mental-health/">Yogyakarta Mental Health Circle</a> - Supportive meetups in Yogyakarta.</li>
+            </ul>
+            <h2 id="organizations">Organizations</h2>
+            <ul>
+                <li><a href="https://www.sehatmental.id/">Sehat Mental Indonesia</a> - National organization promoting mental health awareness.</li>
+                <li><a href="http://www.intothelightid.org/">Into the Light Indonesia</a> - Youth-led community focusing on suicide prevention and mental health awareness.</li>
+                <li><a href="https://www.yayasankesehatanjiwa.or.id/">Yayasan Kesehatan Jiwa</a> - Foundation supporting mental health initiatives.</li>
+                <li><a href="https://www.perhimpunanpsikologiintegritas.org/">Perhimpunan Psikologi Integritas Indonesia</a> - Association of integrative psychology professionals.</li>
+                <li><a href="https://ibpa.or.id/">Indonesian Board of Psychiatric Association</a> - National body for psychiatric professionals.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>Need help? Contact our 24/7 helpline: <span class="helpline">+62 823-2692-0756</span></p>
+        <p>&copy; 2025 DearDar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
